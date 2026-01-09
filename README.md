@@ -120,7 +120,3 @@ Update content in the page components:
 ## License
 
 © 2025 David Ren. All rights reserved.
-
-```
-::contentReference[oaicite:0]{index=0}
-```

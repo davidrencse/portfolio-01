@@ -1,123 +1,126 @@
-# David Ren - Portfolio Website (React)
+````md
+# David Ren — Portfolio Website (React)
 
-A modern, responsive portfolio website built with React.js showcasing projects, skills, and experience in computer engineering.
+A responsive portfolio website built with React and Vite to present projects, technical skills, and experience in computer engineering.
 
-## Features
+## Key Capabilities
 
-- 🎨 Modern, sleek design with smooth animations
-- 📱 Fully responsive across all devices
-- ⚡ Fast performance with Vite build tool
-- 🎭 Interactive animations using Anime.js
-- 📊 Skills visualization with ECharts
-- 🎯 Project filtering and detailed modals
-- 📝 Contact form with real-time validation
-- 🌊 Particle background effects
+- Responsive layout optimized for desktop and mobile
+- Client-side routing with React Router
+- Production builds via Vite for fast local development and optimized output
+- UI motion/interaction using Anime.js
+- Skills and metrics visualization using Apache ECharts
+- Project browsing with filtering and project detail modals
+- Contact form with client-side validation
+- Particle/visual background effects
 
-## Tech Stack
+## Technology Stack
 
-- **React 18** - UI framework
-- **React Router** - Client-side routing
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **Anime.js** - Animation library
-- **ECharts** - Data visualization
-- **Splide.js** - Carousel component
+- React 18
+- React Router
+- Vite
+- Tailwind CSS
+- Anime.js
+- Apache ECharts
+- Splide.js
 
-## Getting Started
+## Requirements
 
-### Prerequisites
-
-- Node.js (v16 or higher)
+- Node.js v16+ (recommended: latest LTS)
 - npm or yarn
 
-### Installation
+## Setup
 
-1. Install dependencies:
+Install dependencies:
+
 ```bash
 npm install
-```
+````
 
-2. Start the development server:
+Run the development server:
+
 ```bash
 npm run dev
 ```
 
-3. Open your browser and navigate to `http://localhost:3000`
+Open the URL printed in your terminal (commonly `http://localhost:5173` for Vite).
 
-### Build for Production
+## Production Build
+
+Build:
 
 ```bash
 npm run build
 ```
 
-The production build will be in the `dist` directory.
+Output is generated in the `dist/` directory.
 
-### Preview Production Build
+Preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## Project Structure
+## Project Layout
 
-```
+```text
 ├── src/
-│   ├── components/      # Reusable components
+│   ├── components/              Reusable UI components
 │   │   ├── Navigation.jsx
 │   │   ├── Footer.jsx
 │   │   └── ParticleBackground.jsx
-│   ├── pages/           # Page components
+│   ├── pages/                   Route-level pages
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
 │   │   ├── Projects.jsx
 │   │   └── Contact.jsx
-│   ├── hooks/           # Custom React hooks
+│   ├── hooks/                   Custom React hooks
 │   │   └── useScrollAnimation.js
-│   ├── App.jsx          # Main app component
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global styles
-├── public/              # Static assets
-│   └── resources/       # Images and media
-├── index.html           # HTML template
-├── package.json         # Dependencies
-├── vite.config.js       # Vite configuration
-└── tailwind.config.js   # Tailwind configuration
+│   ├── App.jsx                  Application root / route setup
+│   ├── main.jsx                 Entry point
+│   └── index.css                Global styles
+├── public/                      Static assets served as-is
+│   └── resources/               Images and media
+├── index.html                   HTML template
+├── package.json                 Scripts and dependencies
+├── vite.config.js               Vite configuration
+└── tailwind.config.js           Tailwind configuration
 ```
 
-## Pages
+## Routes
 
-- **Home** (`/`) - Hero section, featured projects, skills overview
-- **About** (`/about`) - Personal story, education, experience timeline
-- **Projects** (`/projects`) - Interactive project showcase with filtering
-- **Contact** (`/contact`) - Contact form and information
+* `/` — Home: hero, featured projects, skills overview
+* `/about` — About: background, education, experience timeline
+* `/projects` — Projects: project showcase with filtering and modals
+* `/contact` — Contact: contact form and contact details
 
-## Customization
+## Configuration and Content Updates
 
-### Colors
+### Tailwind theme
 
-Edit `tailwind.config.js` to customize the color scheme:
+Adjust the color palette in `tailwind.config.js`:
 
-```javascript
+```js
 colors: {
-  'primary': '#0066ff',
-  'secondary': '#6b7280',
-  'success': '#10b981',
+  primary: "#0066ff",
+  secondary: "#6b7280",
+  success: "#10b981",
 }
 ```
 
-### Content
+### Page content
 
-Update the content in each page component:
-- `src/pages/Home.jsx` - Homepage content
-- `src/pages/About.jsx` - About page content
-- `src/pages/Projects.jsx` - Projects data
-- `src/pages/Contact.jsx` - Contact information
+Update content in the page components:
+
+* `src/pages/Home.jsx`
+* `src/pages/About.jsx`
+* `src/pages/Projects.jsx`
+* `src/pages/Contact.jsx`
 
 ## License
 
 © 2025 David Ren. All rights reserved.
 
-
-
-
-
+```
+::contentReference[oaicite:0]{index=0}
+```
